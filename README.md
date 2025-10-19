@@ -71,10 +71,6 @@ BasesdeDatos_Analisis_Visualizacion_etc/
 
 ## 💪 **Ejercicios Prácticos**
 
----
-
-##  **Ejercicios Prácticos**
-
 **Casos prácticos de MySQL**: Base de datos académica (101 estudiantes) y caso empresarial completo (tienda de alimentos congelados) con análisis estratégico.
 
 📖 **[Ver detalles completos →](Ejercicios/README.md)**
