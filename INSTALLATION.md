@@ -67,6 +67,11 @@ pip install -r requirements.txt
 | **openpyxl** | 3.1.5 | Manejo de archivos Excel |
 | **scikit-learn** | 1.7.1 | Machine learning |
 | **scipy** | 1.16.1 | Cálculos científicos |
+| **peewee** | 3.18.2 | ORM para bases de datos |
+| **psycopg2-binary** | 2.9.11 | Conexión con PostgreSQL |
+| **PyMySQL** | 1.1.2 | Conexión con MySQL |
+| **python-decouple** | 3.8 | Gestión de configuraciones |
+| **SQLAlchemy** | 2.0.44 | ORM para bases de datos |
 
 ### **Instalación Manual por Librería**
 ```bash
@@ -80,6 +85,11 @@ pip install seaborn==0.13.2
 pip install openpyxl==3.1.5
 pip install scikit-learn==1.7.1
 pip install scipy==1.16.1
+pip install peewee==3.18.2
+pip install psycopg2-binary==2.9.11
+pip install PyMySQL==1.1.2
+pip install python-decouple==3.8
+pip install SQLAlchemy==2.0.44
 ```
 
 ---

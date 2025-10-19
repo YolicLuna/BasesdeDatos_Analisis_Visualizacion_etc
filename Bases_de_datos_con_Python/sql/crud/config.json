@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "user": "root",
+    "password": "YolandaEpicaLuna",
+    "database": "Alimentos_congelados_RIAZ",
+    "port": 3306
+}

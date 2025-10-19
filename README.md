@@ -1,6 +1,6 @@
 # 📊 Bases de Datos, Análisis y Visualización
 
-Este repositorio contiene mis apuntes, ejercicios y proyectos de aprendizaje en bases de datos, análisis de datos y visualización, documentando mi progreso en el [bootcamp de análisis de datos](https://codigofacilito.com/programas/analisis-datos-g2) de **[Código Facilito](https://codigofacilito.com/suscripcion?ref=Joseyolic)** y estudios autodidactas.
+Este repositorio contiene mis apuntes, ejercicios y proyectos de aprendizaje en bases de datos, análisis de datos y visualización, documentando mi progreso de aprendizaje autodidacta en plataformas como **[Código Facilito](https://codigofacilito.com/suscripcion?ref=Joseyolic)**, **[Udemy](https://www.udemy.com)**, entre otras.
 
 ## 🎯 Objetivo
 
@@ -15,6 +15,8 @@ Desarrollar competencias sólidas en:
 ```
 BasesdeDatos_Analisis_Visualizacion_etc/
 ├── README.md                    # Este archivo
+├── requirements.txt             # Dependencias de Python
+├── INSTALLATION.md              # Guía de instalación completa
 ├── MySQL/                       # Apuntes y curso de MySQL
 │   ├── README.md
 │   └── Curso_MySQL/            # 16 módulos del curso
@@ -22,71 +24,62 @@ BasesdeDatos_Analisis_Visualizacion_etc/
 │   ├── README.md
 │   ├── Numpy/                  # Computación científica
 │   └── Pandas/                 # Manipulación de datos
+├── Bases_de_datos_con_Python/  # Proyectos prácticos con Python
+│   ├── README.md
+│   ├── crud.py/                # CRUD con PostgreSQL
+│   ├── dbpython.py/           # MySQL con PyMySQL
+│   ├── peewee.py/             # ORM Peewee
+│   ├── postgresql.py/         # PostgreSQL completo
+│   └── sqlalchemy.py/         # SQLAlchemy ORM
 └── Ejercicios/                 # Ejercicios prácticos
     ├── README.md
-    └── Analisis_con_MySQL.sql # Ejercicios de MySQL
+    ├── Analisis_con_MySQL.sql # Ejercicios de MySQL
+    └── congelados_sql/        # Caso práctico de tienda
 ```
 
 ---
 
 ## 🗄️ **MySQL - Bases de Datos**
 
-### Contenido
-- **16 módulos** del curso completo de MySQL
-- Desde conceptos básicos hasta temas avanzados
-- **Ejercicios prácticos** con base de datos de estudiantes titulados
+**16 módulos completos** del curso de MySQL, desde fundamentos hasta temas avanzados como triggers, procedimientos almacenados y optimización.
 
-### Temas Cubiertos
-- Creación de bases de datos y tablas
-- Restricciones y modificación de estructuras
-- Consultas (SELECT, JOIN, subconsultas)
-- Funciones, procedimientos y triggers
-- Vistas, transacciones y optimización
-- Respaldos y gestión de permisos
+📖 **[Ver detalles completos →](MySQL/README.md)**
 
-### Estado
-✅ **Completado** - Apuntes y ejercicios disponibles
+**Estado**: ✅ Completado - Apuntes y ejercicios disponibles
 
 ---
 
 ## 🐍 **Python - Análisis de Datos**
 
-### Contenido
-- **NumPy**: Arrays, operaciones matemáticas, matrices
-- **Pandas**: Series, DataFrames, manipulación de datos
-- **Ejercicios prácticos** con datasets reales
+**Apuntes completos** de NumPy y Pandas con notebooks interactivos, ejemplos prácticos y casos de uso reales para análisis de datos.
 
-### Temas Cubiertos
+📖 **[Ver detalles completos →](Analisis_Python/README.md)**
 
-#### **NumPy**
-- Arreglos y matrices multidimensionales
-- Operaciones matemáticas vectorizadas
-- Indexación, slicing y filtrado
-- Funciones de agregación y estadística
-- Manejo de archivos (CSV, binarios)
+**Estado**: 🔄 En progreso - Apuntes completos, ejercicios planificados
 
-#### **Pandas**
-- Series y DataFrames
-- Indexación avanzada (loc, iloc)
-- Filtrado y condiciones complejas
-- Agrupamiento y análisis estadístico
-- Métodos de string y manipulación de datos
+---
 
-### Estado
-🔄 **En progreso** - Apuntes completos, ejercicios planificados
+## 🛠️ **Bases de Datos con Python**
+
+**7 proyectos completos** implementando diferentes tecnologías: conectores directos (psycopg2, PyMySQL), ORMs (Peewee, SQLAlchemy) e interfaces gráficas con Tkinter.
+
+📖 **[Ver detalles completos →](Bases_de_datos_con_Python/README.md)**
+
+**Estado**: ✅ Completado - 5/5 proyectos funcionales, documentación completa
 
 ---
 
 ## 💪 **Ejercicios Prácticos**
 
-### Contenido Actual
-- **MySQL**: Análisis completo con base de datos educativa
-- Consultas analíticas y reportes
+---
 
-### Planificado
-- **Python**: Ejercicios con NumPy y Pandas
-- **Proyectos integrados**: Combinando múltiples herramientas
-- **Análisis de datasets reales**
+##  **Ejercicios Prácticos**
+
+**Casos prácticos de MySQL**: Base de datos académica (101 estudiantes) y caso empresarial completo (tienda de alimentos congelados) con análisis estratégico.
+
+📖 **[Ver detalles completos →](Ejercicios/README.md)**
+
+**Estado**: ✅ MySQL completado, Python planificado
 
 ---
 
@@ -95,9 +88,15 @@ BasesdeDatos_Analisis_Visualizacion_etc/
 | Tecnología | Nivel | Estado | Descripción |
 |------------|-------|--------|-------------|
 | **MySQL** | ⭐⭐⭐ | ✅ Activo | SGBD relacional |
-| **Python** | ⭐⭐ | 🔄 Aprendiendo | Lenguaje de programación |
+| **PostgreSQL** | ⭐⭐⭐ | ✅ Activo | SGBD avanzado |
+| **Python** | ⭐⭐⭐ | ✅ Activo | Lenguaje de programación |
+| **psycopg2** | ⭐⭐ | ✅ Implementado | Conector PostgreSQL |
+| **PyMySQL** | ⭐⭐ | ✅ Implementado | Conector MySQL |
+| **Peewee** | ⭐⭐ | ✅ Implementado | ORM ligero |
+| **SQLAlchemy** | ⭐⭐ | ✅ Implementado | ORM completo |
 | **NumPy** | ⭐⭐ | 📚 Estudiado | Computación científica |
 | **Pandas** | ⭐⭐ | 📚 Estudiado | Análisis de datos |
+| **Tkinter** | ⭐⭐ | ✅ Implementado | Interfaces gráficas |
 | **Jupyter** | ⭐⭐ | 🔄 Usando | Notebooks interactivos |
 | **Git** | ⭐⭐ | ✅ Activo | Control de versiones |
 
@@ -110,19 +109,24 @@ BasesdeDatos_Analisis_Visualizacion_etc/
 ### **Completado** ✅
 - Curso completo de MySQL (16 módulos)
 - Apuntes detallados de NumPy y Pandas
-- Ejercicios prácticos de MySQL
-- Configuración de entorno de desarrollo
+- **5 proyectos de bases de datos con Python**
+- **2 casos prácticos de MySQL** (académico + empresarial)
+- **4 ORMs y conectores** implementados
+- **Interfaces gráficas** con Tkinter
+- Configuración completa de entorno de desarrollo
+- **Documentación profesional** de todos los proyectos
 
 ### **En Progreso** 🔄
-- Ejercicios prácticos con Python
+- Ejercicios prácticos avanzados con Python
 - Análisis de datasets reales
-- Optimización de consultas SQL
+- Optimización de consultas SQL complejas
 
 ### **Planificado** 📋
 - Visualización de datos (Matplotlib, Seaborn)
 - Análisis estadístico avanzado
-- Proyectos de análisis completos
-- Dashboard y reporting
+- **Proyectos integrados** (MySQL + Python + Visualización)
+- ETL processes y pipelines de datos
+- Dashboard y reporting automatizado
 
 ---
 
@@ -147,14 +151,18 @@ BasesdeDatos_Analisis_Visualizacion_etc/
 
 ## 🔗 Recursos de Aprendizaje
 
-- **[Código Facilito](https://codigofacilito.com/suscripcion?ref=Joseyolic)**: [Bootcamp de análisis de datos](https://codigofacilito.com/programas/analisis-datos-g2)
-- **Documentación oficial** de cada tecnología
-- **Práctica constante** con ejercicios propios
-- **Proyectos autodidactas** para consolidar conocimientos
+**[Código Facilito](https://codigofacilito.com/suscripcion?ref=Joseyolic)**:
+  - [Bootcamp de análisis de datos](https://codigofacilito.com/programas/analisis-datos-g2)
+  - [Curso Profesional de Base de Datos](https://codigofacilito.com/cursos/base-datos-profesional)
+  - [Curso de base de datos con Python](https://codigofacilito.com/cursos/base-datos-python)
+  - [Curso de introducción al análisis de datos con Python](https://codigofacilito.com/cursos/analisis-datos-python)
+  - [Curso de procesos de ETL Modernos con Python](https://codigofacilito.com/cursos/python-etls)
+  - [Curso de Análisis Exploratorio (EDA) y Visualización de Datos](https://codigofacilito.com/cursos/eda-visualizacion)
+
 
 ---
 
-## 📞 Información
+## Información
 
 **Propósito**: Portafolio de aprendizaje y referencia personal  
 **Enfoque**: Análisis de datos y bases de datos  

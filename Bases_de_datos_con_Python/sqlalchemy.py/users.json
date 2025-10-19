@@ -1,0 +1,65 @@
+[
+    {
+        "age": "25",
+        "country": "USA",
+        "username": "Eduardo",
+        "email": "eduardo@ejemplo.com",
+        "gender": "Male"
+    },
+    {
+        "age": "33",
+        "country": "Mexico",
+        "username": "Nancy",
+        "email": "nancy@ejemplo.com",
+        "gender": "Female"
+    },
+    {   
+        "age": "22",
+        "country": "Japon",
+        "username": "Luna",
+        "email": "luna@ejemplo.com",
+        "gender": "Female" 
+    },
+    {
+        "age": "44",
+        "country": "Mexico",
+        "username": "Gonzalo",
+        "email": "gonzalo@ejemplo.com",
+        "gender": "Male"
+    },
+    {
+        "age": "30",
+        "country": "Mexico",
+        "username": "Adriana",
+        "email": "adriana@ejemplo.com",
+        "gender": "Female"
+    },
+    {
+        "age": "34",
+        "country": "USA",
+        "username": "Mark",
+        "email": "mark@ejemplo.com",
+        "gender": "Male"
+    },
+    {
+        "age": "42",
+        "country": "Holanda",
+        "username": "Simone",
+        "email": "simone@ejemplo.com",
+        "gender": "Female"
+    },
+    {
+        "age": "36",
+        "country": "Finlandia",
+        "username": "Sharon",
+        "email": "sharon@ejemplo.com",
+        "gender": "Female"
+    },
+    {
+        "age": "22",
+        "country": "USA",
+        "username": "Jhon",
+        "email": "jhon@ejemplo.com",
+        "gender": "Male"
+    }
+]
