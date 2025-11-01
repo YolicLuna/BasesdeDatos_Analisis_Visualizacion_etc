@@ -10,6 +10,7 @@ Este repositorio contiene mis apuntes, ejercicios y proyectos de aprendizaje en 
 ![Jupyter](https://img.shields.io/badge/Jupyter-Lab-orange?style=for-the-badge&logo=jupyter)
 ![MySQL](https://img.shields.io/badge/MySQL-Relacional-lightgrey?style=for-the-badge&logo=mysql)
 ![Excel](https://img.shields.io/badge/Microsoft_Excel-Data-green?style=for-the-badge&logo=microsoft-excel)
+![VSCode](https://img.shields.io/badge/VSCode-Integrated-blue?style=for-the-badge&logo=visual-studio-code)
 
 </div>
 
