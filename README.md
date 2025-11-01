@@ -2,6 +2,16 @@
 
 Este repositorio contiene mis apuntes, ejercicios y proyectos de aprendizaje en bases de datos, análisis de datos y visualización, documentando mi progreso de aprendizaje autodidacta en plataformas como **[Código Facilito](https://codigofacilito.com/suscripcion?ref=Joseyolic)**, **[Udemy](https://www.udemy.com)**, entre otras.
 
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python)
+![NumPy](https://img.shields.io/badge/NumPy-1.24+-yellow?style=for-the-badge&logo=numpy)
+![Pandas](https://img.shields.io/badge/Pandas-2.0+-green?style=for-the-badge&logo=pandas)
+![Jupyter](https://img.shields.io/badge/Jupyter-Lab-orange?style=for-the-badge&logo=jupyter)
+![MySQL](https://img.shields.io/badge/MySQL-Relacional-lightgrey?style=for-the-badge&logo=mysql)
+
+</div>
+
 ## 🎯 Objetivo
 
 Desarrollar competencias sólidas en:
