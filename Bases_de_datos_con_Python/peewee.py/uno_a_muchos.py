@@ -8,27 +8,22 @@ database = peewee.MySQLDatabase("python_db",
 
 class Author(peewee.Model):
     name = peewee.CharField(max_length=50)
-
     class Meta:
         database = database
         db_table = "authors"
-    
     def __str__(self):
         return self.name
         
 class Book(peewee.Model):
     title = peewee.CharField(max_length=50)
     author = peewee.ForeignKeyField(Author, backref = "books")
-
     class Meta:
         database = database
         db_table = "books"
-    
     def __str__(self):
         return self.title
 
 if __name__ == "__main__":
-    
     database.drop_tables([Author, Book])
     database.create_tables([Author, Book])
 
