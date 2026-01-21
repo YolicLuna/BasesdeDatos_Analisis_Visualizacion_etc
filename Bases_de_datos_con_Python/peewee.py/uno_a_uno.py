@@ -1,5 +1,4 @@
 import peewee
-#Se importa la libreria peewee para la conexion a la base de datos
 
 database = peewee.MySQLDatabase("python_db",
                                 host = "127.0.0.1",
