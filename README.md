@@ -5,7 +5,7 @@
 ![Snowflake](https://img.shields.io/badge/Snowflake-Datos%20en%20la%20nube-29B5E8.svg)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-orange.svg)
 
-Repositorio de prácticas de datos con diferentes tecnologías. Reúne ejercicios de SQL, análisis exploratorio, visualización, automatización de cargas y trabajo con datos en Snowflake. Cada carpeta organiza un conjunto de prácticas con su propia documentación.
+Repositorio de prácticas de datos con diferentes tecnologías. Reúne ejercicios de SQL, Python y Snowflake, análisis exploratorio, visualización, automatización de cargas y trabajo con datos. Cada carpeta organiza un conjunto de prácticas con su propia documentación.
 
 ---
 
