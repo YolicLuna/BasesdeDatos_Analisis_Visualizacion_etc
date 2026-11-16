@@ -1,71 +1,93 @@
-# Curso de Bases de Datos con MySQL – Apuntes y Consultas
+# Ejercicios de MySQL - Prácticas
 
-Este repositorio contiene los apuntes y consultas que he realizado durante el curso de bases de datos con MySQL en la plataforma de [Codigo Facilito](https://codigofacilito.com/). El objetivo es que este proyecto sirva como recurso de estudio y referencia rápida para consultas sobre conceptos y comandos de MySQL.
+Esta sección contiene una colección de ejercicios prácticos de SQL con MySQL para desarrollar habilidades en gestión de bases de datos, consultas avanzadas y análisis de datos.
 
-## Estructura del Proyecto
+## Archivos del Repositorio
 
-- **1_Bases_de_datos_y_tablas.sql**  
-  Comandos para crear, eliminar y consultar bases de datos y tablas. Incluye ejemplos de inserción y consulta de datos.
+### 1. **Analisis_con_MySQL.sql**
+**Objetivo:** Práctica de creación y manipulación de bases de datos educativas.
 
-- **2_Restricciones.sql**  
-  Ejemplos y explicaciones sobre restricciones en MySQL como `NOT NULL`, `UNIQUE`, `DEFAULT`, `UNSIGNED`, `ENUM`, `PRIMARY KEY`, `AUTO_INCREMENT`, `FOREIGN KEY` y restricciones de combinación única.
+Este archivo contiene:
+- Creación de una base de datos llamada `Alumnos_titulados` con dos tablas relacionadas
+- Tabla `info_titulados`: Almacena información de estudiantes egresados (universidad, estado, carrera, promedio, fechas)
+- Tabla `alumnos`: Contiene datos personales de los alumnos (nombre, edad, teléfono, email, dirección)
+- **50 registros de ejemplo** con datos de universidades mexicanas y estudiantes de diferentes carreras
+- Implementación de relaciones mediante **llaves foráneas** (Foreign Keys)
 
-- **3_Modificar_tablas.sql**  
-  Comandos para modificar la estructura de las tablas existentes, como agregar/eliminar columnas, cambiar tipos de datos, renombrar tablas, agregar claves primarias y foráneas, y modificar restricciones.
-
-- **4_Sentencias_basicas.sql**  
-  Ejemplos de sentencias básicas para manipulación de datos: `SELECT`, `INSERT`, `UPDATE`, `DELETE`, eliminación en cascada con claves foráneas y uso de `TRUNCATE`.
-
-- **5_Funciones.sql**  
-  Ejemplos de funciones para manipular cadenas de texto, números y fechas. Incluye funciones como `CONCAT`, `LENGTH`, `UPPER`, `LOWER`, `RAND`, `NOW`, y creación de funciones personalizadas.
-
-- **6_Funciones_avanzadas.sql**  
-  Uso avanzado de funciones y cláusulas como `LIKE`, `ORDER BY`, `LIMIT`, `COUNT`, `SUM`, `GROUP BY`, `HAVING`, `UNION` y subconsultas.
-
-- **7_Joins.sql**  
-  Explicación y ejemplos de diferentes tipos de JOIN en MySQL: `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN` y `CROSS JOIN`.
-
-- **8_Vistas.sql**  
-  Creación, uso y gestión de vistas en MySQL. Incluye ejemplos de cómo crear, modificar y eliminar vistas.
-
-- **9_Procedimientos.sql**  
-  Implementación de procedimientos almacenados, incluyendo ejemplos con parámetros de entrada/salida y estructuras de control.
-
-- **10_Transacciones.sql**  
-  Manejo de transacciones en MySQL usando `START TRANSACTION`, `COMMIT` y `ROLLBACK`.
-
-- **11_Motores_de_almacenamiento.sql**  
-  Explicación de los diferentes motores de almacenamiento en MySQL, enfocado en MyISAM e InnoDB.
-
-- **12_Eventos.sql**  
-  Creación y gestión de eventos programados en MySQL, incluyendo eventos periódicos y únicos.
-
-- **13_Cursores.sql**  
-  Implementación y uso de cursores en procedimientos almacenados para procesar resultados fila por fila.
-
-- **14_Respaldo_de_informacion.sql**  
-  Comandos y procedimientos para realizar respaldos de bases de datos y tablas usando mysqldump.
-
-- **15_Asignación_permisos.sql**  
-  Gestión de usuarios y permisos en MySQL, incluyendo creación de usuarios y asignación de privilegios.
-
-- **16_Triggers.sql**  
-  Creación y gestión de triggers (disparadores) para automatizar acciones en respuesta a eventos en las tablas.
-
-## Uso
-
-Puedes utilizar estos archivos como referencia para repasar conceptos o copiar consultas y ejemplos en tu propio entorno de MySQL.  
-A medida que avance en el curso, iré agregando más archivos y contenido.
-
-## Notas
-
-- Los archivos contienen comentarios explicativos en español para facilitar el aprendizaje.
-- Este repositorio está pensado como un recurso personal de estudio, pero puede ser útil para cualquier persona que esté aprendiendo MySQL desde cero.
-
-## Créditos
-
-Curso realizado en [Codigo Facilito](https://codigofacilito.com/).
+**Habilidades practicadas:** Creación de tablas, inserción de datos masivos, integridad referencial, relaciones uno-a-muchos.
 
 ---
 
-_Siéntete libre de utilizar y modificar estos apuntes para tu propio aprendizaje._
+### 2. **caso_practico.sql**
+**Objetivo:** Análisis de datos e inteligencia de negocios para una tienda.
+
+Este archivo presenta un caso de estudio real donde se actúa como analista de datos con consultas SQL enfocadas en:
+- **Clientes más valiosos:** Identificar los 5 clientes con mayor volumen de compras
+- **Productividad de empleados:** Determinar qué empleado ha generado más ventas
+- **Productos populares:** Conocer los 3 productos más vendidos por cantidad
+- **Análisis de proveedores:** Identificar proveedores con productos más vendidos
+- **Análisis temporal:** Detectar la temporada de mayores ventas
+- **Fidelización:** Calcular frecuencia de compras y gasto promedio por cliente
+
+**Habilidades practicadas:** JOINs múltiples, GROUP BY, agregación (SUM, COUNT, AVG), LIMIT, ORDER BY, análisis de negocio.
+
+---
+
+### 3. **Pixar/** *(Carpeta)*
+**Objetivo:** Carga de datos desde archivos CSV e importación de información externa.
+
+Esta carpeta contiene:
+- **Pixar.sql:** Script SQL que demuestra:
+  - Creación de base de datos `Practicas` con tabla `Pixar`
+  - **Importación de datos CSV** con el comando `LOAD DATA INFILE` desde `pixar_films.csv`
+  - Manejo de valores nulos y conversión de datos (NULLIF)
+  - Consultas prácticas sobre la tabla:
+    - Filtrado por rango de duración (BETWEEN)
+    - Ordenamiento y limitación de resultados (ORDER BY, LIMIT)
+    - Búsqueda de texto con patrones (LIKE)
+    - Uso de funciones de agrupación (COUNT, GROUP BY)
+    - Validación de existencia de registros (IF EXISTS)
+
+- **pixar_films.csv:** Archivo con datos reales de películas de Pixar (id, film, release_date, runtime, film_rating)
+
+**Habilidades practicadas:** Carga de datos, importación CSV, valores nulos, filtrado avanzado, búsqueda de patrones, funciones condicionales.
+
+---
+
+### 4. **sql_Riaz.sql**
+**Objetivo:** Modelado completo de base de datos para gestión de inventario y ventas.
+
+Este archivo contiene un **modelo de base de datos integral** para una empresa de alimentos congelados:
+- **Tabla Empleados:** Gestión de personal con datos de contacto
+- **Tabla Clientes:** Información de clientes y direcciones
+- **Tabla Proveedores:** Base de datos de proveedores
+- **Tabla Productos:** Catálogo con precios de compra y venta
+- **Tabla Ventas:** Registro de transacciones con múltiples campos
+- **Tabla Pedidos:** Seguimiento de órdenes y entregas
+- **Tabla Inventario:** Control de stock y gestión de almacén
+- Implementación de **múltiples relaciones** entre tablas mediante llaves foráneas
+- **Importación de datos CSV** desde múltiples archivos
+
+**Habilidades practicadas:** Diseño relacional completo, integridad referencial, modelos de negocio reales, importación de datos en bloque, normalización de datos.
+
+---
+
+## Requisitos
+
+- MySQL 5.7 o superior
+- Cliente de MySQL (mysql command line, MySQL Workbench, etc.)
+
+## Cómo usar estos archivos
+
+1. Abre tu cliente de MySQL
+2. Ejecuta cada archivo SQL según el orden que desees
+3. Para los archivos en subcarpetas (ej: `Pixar/`), navega a esa carpeta o ajusta las rutas según sea necesario
+4. Modifica las consultas y experimenta con diferentes condiciones
+5. Intenta crear tus propias consultas basadas en los modelos presentados
+
+## Recomendaciones de estudio
+
+- Comienza con `Analisis_con_MySQL.sql` para entender relaciones básicas
+- Continúa con `Pixar/Pixar.sql` para practicar importación y filtrado
+- Usa `caso_practico.sql` para aprender análisis de datos
+- Finaliza con `sql_Riaz.sql` para ver un modelo de negocio completo

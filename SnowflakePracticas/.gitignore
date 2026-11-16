@@ -1,0 +1,18 @@
+# Entornos y editor
+.vscode
+env
+__pycache__/
+*.pyc
+
+# Credenciales y variables de entorno (¡importante!)
+.env
+*.env
+config.json
+.snowsql/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Modelos entrenados
+*.joblib
+*.joblib.gz
