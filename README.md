@@ -1,180 +1,98 @@
-# 📊 Bases de Datos, Análisis y Visualización
+# Bases de Datos, Análisis y Visualización
 
-Este repositorio contiene mis apuntes, ejercicios y proyectos de aprendizaje en bases de datos, análisis de datos y visualización, documentando mi progreso de aprendizaje autodidacta en plataformas como **[Código Facilito](https://codigofacilito.com/suscripcion?ref=Joseyolic)**, **[Udemy](https://www.udemy.com)**, entre otras.
+![Python](https://img.shields.io/badge/Python-An%C3%A1lisis%20de%20datos-blue.svg)
+![MySQL](https://img.shields.io/badge/MySQL-Pr%C3%A1cticas-4479A1.svg)
+![Snowflake](https://img.shields.io/badge/Snowflake-Datos%20en%20la%20nube-29B5E8.svg)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-orange.svg)
 
-<div align="center">
+Repositorio de prácticas de datos con diferentes tecnologías. Reúne ejercicios de SQL, análisis exploratorio, visualización, automatización de cargas y trabajo con datos en Snowflake. Cada carpeta organiza un conjunto de prácticas con su propia documentación.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python)
-![NumPy](https://img.shields.io/badge/NumPy-1.24+-yellow?style=for-the-badge&logo=numpy)
-![Pandas](https://img.shields.io/badge/Pandas-2.0+-green?style=for-the-badge&logo=pandas)
-![Jupyter](https://img.shields.io/badge/Jupyter-Lab-orange?style=for-the-badge&logo=jupyter)
-![MySQL](https://img.shields.io/badge/MySQL-Relacional-lightgrey?style=for-the-badge&logo=mysql)
-![VSCode](https://img.shields.io/badge/VSCode-Integrated-blue?style=for-the-badge&logo=visual-studio-code)
+---
 
-</div>
+## Descripción General
 
-## 🎯 Objetivo
+El repositorio está organizado por tecnología y tipo de práctica. La carpeta `MySql` contiene scripts SQL para aprender modelado relacional, consultas y análisis de negocio; `Python` agrupa proyectos de análisis y visualización con distintos datasets; y `SnowflakePracticas` reúne ejercicios para conectar Python con Snowflake, cargar y transformar datos y aplicar análisis predictivo.
 
-Desarrollar competencias sólidas en:
-- **Gestión de bases de datos** con MySQL
-- **Análisis de datos** con Python (NumPy, Pandas)
-- **Visualización de datos** y reporting
-- **Aplicación práctica** de conceptos teóricos
+Las guías de cada sección describen sus archivos, requisitos y formas de ejecución:
 
-## 📁 Estructura del Proyecto
+- [Prácticas de MySQL](./MySql/README.md)
+- [Proyectos de análisis con Python](./Python/README.md)
+- [Prácticas de Python y Snowflake](./SnowflakePracticas/README.md)
 
-```
+### Tecnologías Utilizadas
+
+Las prácticas utilizan MySQL para consultas y modelado de bases de datos; Python con Pandas, NumPy y Jupyter para análisis; y Snowflake junto con su conector y Snowpark para trabajar con datos en la nube. También se incluyen herramientas de visualización como Matplotlib, Seaborn y Plotly, así como Streamlit para crear un dashboard interactivo.
+
+### Arquitectura y Organización del Repositorio
+
+El repositorio no es una aplicación única: cada carpeta contiene ejercicios y proyectos independientes. Los scripts SQL se ejecutan en MySQL; los proyectos de Python se trabajan desde sus notebooks o archivos correspondientes; y las prácticas de Snowflake requieren configurar una cuenta y los objetos de datos utilizados por cada ejercicio.
+
+#### Estructura del Proyecto
+
+```text
 BasesdeDatos_Analisis_Visualizacion_etc/
-├── README.md                    # Este archivo
-├── requirements.txt             # Dependencias de Python
-├── INSTALLATION.md              # Guía de instalación completa
-├── MySQL/                       # Apuntes y curso de MySQL
+├── README.md
+├── Ejemplo.md
+├── INSTALLATION.md
+├── MySql/
 │   ├── README.md
-│   └── Curso_MySQL/            # 16 módulos del curso
-├── Analisis_Python/            # Apuntes de Python para análisis
+│   ├── Analisis_con_MySQL.sql
+│   ├── caso_practico.sql
+│   ├── sql_Riaz.sql
+│   └── Pixar/
+│       ├── Pixar.sql
+│       └── pixar_films.csv
+├── Python/
 │   ├── README.md
-│   ├── Numpy/                  # Computación científica
-│   └── Pandas/                 # Manipulación de datos
-├── Bases_de_datos_con_Python/  # Proyectos prácticos con Python
-│   ├── README.md
-│   ├── crud.py/                # CRUD con PostgreSQL
-│   ├── dbpython.py/           # MySQL con PyMySQL
-│   ├── peewee.py/             # ORM Peewee
-│   ├── postgresql.py/         # PostgreSQL completo
-│   └── sqlalchemy.py/         # SQLAlchemy ORM
-└── Ejercicios/                 # Ejercicios prácticos
+│   ├── Analisis_CO2/
+│   ├── Analisis_serie_temporal/
+│   ├── Indice_de_felicidad/
+│   └── Superstore_analisis/
+└── SnowflakePracticas/
     ├── README.md
-    ├── Analisis_con_MySQL.sql # Ejercicios de MySQL
-    └── congelados_sql/        # Caso práctico de tienda
+    ├── 1.-python_snowflake.ipynb
+    ├── 2.-automatizacion.ipynb
+    ├── 3.-snowpark.ipynb
+    ├── 4.-Analisis_predictivo_y_ML.ipynb
+    ├── Automatizacion_analisis_datos.py
+    ├── dataset.csv
+    └── requirements.txt
 ```
 
----
+### Secciones del Repositorio
 
-## 🗄️ **MySQL - Bases de Datos**
+#### MySQL — Consultas y modelado de bases de datos
 
-**16 módulos completos** del curso de MySQL, desde fundamentos hasta temas avanzados como triggers, procedimientos almacenados y optimización.
+La carpeta [MySql](./MySql/) contiene ejercicios para practicar SQL y el diseño de bases de datos relacionales. Incluye la creación de tablas relacionadas con datos de estudiantes, un caso de análisis de ventas para una tienda, consultas y carga de datos de películas de Pixar desde CSV, y un modelo de inventario, ventas y pedidos.
 
-📖 **[Ver detalles completos →](MySQL/README.md)**
+Entre los temas trabajados se encuentran las llaves foráneas, la integridad referencial, los `JOIN`, las agregaciones, el filtrado, la importación de datos y el análisis de negocio. Consulta [su README](./MySql/README.md) para ver el detalle de cada script y las recomendaciones de estudio.
 
-**Estado**: ✅ Completado - Apuntes y ejercicios disponibles
+#### Python — Análisis exploratorio y visualización
 
----
+La carpeta [Python](./Python/) reúne proyectos de análisis con datasets reales. Sus subcarpetas cubren el análisis de emisiones de CO₂ per cápita, series temporales financieras, el Índice de Felicidad Mundial y datos de ventas de Superstore.
 
-## 🐍 **Python - Análisis de Datos**
+Las prácticas exploran relaciones entre variables, correlaciones, tendencias temporales, comparaciones entre países y métricas de negocio. Se apoyan principalmente en Python, Pandas, NumPy, Matplotlib, Seaborn, Statsmodels y Jupyter Notebook. Cada proyecto incluye documentación propia; el [README de Python](./Python/README.md) sirve como índice de la sección.
 
-**Apuntes completos** de NumPy y Pandas con notebooks interactivos, ejemplos prácticos y casos de uso reales para análisis de datos.
+#### SnowflakePracticas — Python, Snowflake y Snowpark
 
-📖 **[Ver detalles completos →](Analisis_Python/README.md)**
+La carpeta [SnowflakePracticas](./SnowflakePracticas/) desarrolla flujos de trabajo con datos almacenados en Snowflake: conexión y consultas desde Python, automatización de cargas desde CSV, transformaciones con Snowpark, análisis predictivo de ventas y un dashboard interactivo.
 
-**Estado**: 🔄 En progreso - Apuntes completos, ejercicios planificados
-
----
-
-## 🛠️ **Bases de Datos con Python**
-
-**7 proyectos completos** implementando diferentes tecnologías: conectores directos (psycopg2, PyMySQL), ORMs (Peewee, SQLAlchemy) e interfaces gráficas con Tkinter.
-
-📖 **[Ver detalles completos →](Bases_de_datos_con_Python/README.md)**
-
-**Estado**: ✅ Completado - 5/5 proyectos funcionales, documentación completa
+Los ejercicios utilizan Snowflake Connector for Python, Snowpark, Pandas, Jupyter, Streamlit, Plotly y scikit-learn. El archivo `requirements.txt` contiene las dependencias de esta sección. Para configurar la conexión, revisar los requisitos de cuenta y ejecutar las prácticas, consulta el [README de SnowflakePracticas](./SnowflakePracticas/README.md).
 
 ---
 
-## 💪 **Ejercicios Prácticos**
+## Requisitos y Ejecución
 
-**Casos prácticos de MySQL**: Base de datos académica (101 estudiantes) y caso empresarial completo (tienda de alimentos congelados) con análisis estratégico.
+Los requisitos dependen de la práctica: para los ejercicios SQL se necesita MySQL y un cliente compatible; los proyectos de análisis requieren Python y las bibliotecas indicadas en su documentación; las prácticas en la nube requieren además una cuenta de Snowflake y los permisos y objetos que utiliza cada ejercicio.
 
-📖 **[Ver detalles completos →](Ejercicios/README.md)**
+No hay un único comando de instalación o ejecución para todo el repositorio. Antes de empezar, abre el README de la carpeta correspondiente y sigue sus instrucciones específicas.
 
-**Estado**: ✅ MySQL completado, Python planificado
+## Datos y Credenciales
 
----
-
-## 🛠️ Tecnologías y Herramientas
-
-| Tecnología | Nivel | Estado | Descripción |
-|------------|-------|--------|-------------|
-| **MySQL** | ⭐⭐⭐ | ✅ Activo | SGBD relacional |
-| **PostgreSQL** | ⭐⭐⭐ | ✅ Activo | SGBD avanzado |
-| **Python** | ⭐⭐⭐ | ✅ Activo | Lenguaje de programación |
-| **psycopg2** | ⭐⭐ | ✅ Implementado | Conector PostgreSQL |
-| **PyMySQL** | ⭐⭐ | ✅ Implementado | Conector MySQL |
-| **Peewee** | ⭐⭐ | ✅ Implementado | ORM ligero |
-| **SQLAlchemy** | ⭐⭐ | ✅ Implementado | ORM completo |
-| **NumPy** | ⭐⭐ | 📚 Estudiado | Computación científica |
-| **Pandas** | ⭐⭐ | 📚 Estudiado | Análisis de datos |
-| **Tkinter** | ⭐⭐ | ✅ Implementado | Interfaces gráficas |
-| **Jupyter** | ⭐⭐ | 🔄 Usando | Notebooks interactivos |
-| **Git** | ⭐⭐ | ✅ Activo | Control de versiones |
-
-**Leyenda**: ⭐ Básico, ⭐⭐ Intermedio, ⭐⭐⭐ Avanzado
+Algunas prácticas incluyen archivos CSV como datos de entrada. Las prácticas de Snowflake requieren configurar localmente las credenciales de conexión y los recursos de la cuenta descritos en su documentación. No guardes contraseñas, archivos de configuración sensibles ni otros secretos en el repositorio.
 
 ---
 
-## 📈 Progreso de Aprendizaje
+## Objetivo
 
-### **Completado** ✅
-- Curso completo de MySQL (16 módulos)
-- Apuntes detallados de NumPy y Pandas
-- **5 proyectos de bases de datos con Python**
-- **2 casos prácticos de MySQL** (académico + empresarial)
-- **4 ORMs y conectores** implementados
-- **Interfaces gráficas** con Tkinter
-- Configuración completa de entorno de desarrollo
-- **Documentación profesional** de todos los proyectos
-
-### **En Progreso** 🔄
-- Ejercicios prácticos avanzados con Python
-- Análisis de datasets reales
-- Optimización de consultas SQL complejas
-
-### **Planificado** 📋
-- Visualización de datos (Matplotlib, Seaborn)
-- Análisis estadístico avanzado
-- **Proyectos integrados** (MySQL + Python + Visualización)
-- ETL processes y pipelines de datos
-- Dashboard y reporting automatizado
-
----
-
-## 🎓 Metodología de Estudio
-
-### **Aprendizaje Teórico**
-1. **Estudio de conceptos** fundamentales
-2. **Toma de apuntes** detallados en Jupyter Notebooks
-3. **Documentación** de sintaxis y métodos importantes
-
-### **Aplicación Práctica**
-1. **Ejercicios dirigidos** para reforzar conceptos
-2. **Proyectos reales** con datasets diversos
-3. **Resolución de problemas** progresivos
-
-### **Documentación**
-- **README** en cada carpeta con índices detallados
-- **Comentarios** explicativos en código
-- **Ejemplos prácticos** y casos de uso
-
----
-
-## 🔗 Recursos de Aprendizaje
-
-**[Código Facilito](https://codigofacilito.com/suscripcion?ref=Joseyolic)**:
-  - [Bootcamp de análisis de datos](https://codigofacilito.com/programas/analisis-datos-g2)
-  - [Curso Profesional de Base de Datos](https://codigofacilito.com/cursos/base-datos-profesional)
-  - [Curso de base de datos con Python](https://codigofacilito.com/cursos/base-datos-python)
-  - [Curso de introducción al análisis de datos con Python](https://codigofacilito.com/cursos/analisis-datos-python)
-  - [Curso de procesos de ETL Modernos con Python](https://codigofacilito.com/cursos/python-etls)
-  - [Curso de Análisis Exploratorio (EDA) y Visualización de Datos](https://codigofacilito.com/cursos/eda-visualizacion)
-
-
----
-
-## Información
-
-**Propósito**: Portafolio de aprendizaje y referencia personal  
-**Enfoque**: Análisis de datos y bases de datos  
-**Actualización**: Continua conforme avanzo en el aprendizaje
-
----
-
-*Este repositorio documenta mi camino en el aprendizaje de análisis de datos, desde fundamentos de bases de datos hasta técnicas avanzadas de análisis con Python, manteniendo un enfoque práctico y aplicado.*
+Desarrollar habilidades prácticas en bases de datos, análisis y visualización de datos mediante ejercicios con diferentes herramientas y tecnologías, desde consultas SQL y modelado relacional hasta análisis con Python y procesamiento de datos en Snowflake.
